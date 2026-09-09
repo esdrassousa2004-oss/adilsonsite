@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Adilson Benedito — filmmaker e dronemaker FPV para projetos imobiliários, comerciais, arquitetura e construção."
+    />
+    <title>Adilson Benedito | Filmmaker / Dronemaker FPV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.27/bundles/lenis.min.umd.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/animations.js"></script>
+  </head>
+  <body>
+    <div class="fpv-cursor" aria-hidden="true">
+      <span class="fpv-cursor-dot"></span>
+      <span class="fpv-cursor-line fpv-cursor-line-top"></span>
+      <span class="fpv-cursor-line fpv-cursor-line-right"></span>
+      <span class="fpv-cursor-line fpv-cursor-line-bottom"></span>
+      <span class="fpv-cursor-line fpv-cursor-line-left"></span>
+    </div>
+    <canvas class="particle-field" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand" aria-label="Adilson Benedito home">
+          <span class="brand-mark">AB</span>
+          <span class="brand-text">ADILSON BENEDITO</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navegação principal">
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#categorias">Categorias</a>
+          <a href="#fpv">FPV</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <a href="#contato" class="header-cta">Falar agora</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="video-block hero-video-wrap">
+          <img class="hero-video hero-banner-image" src="assets/images/categorias/banner - adilson benedito.png" alt="Adilson Benedito com câmera e drone FPV" />
+        </div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-inner">
+          <div class="hero-copy reveal-up">
+            <p class="eyebrow">ADILSON BENEDITO</p>
+            <p class="eyebrow sub">FILMMAKER / DRONEMAKER FPV</p>
+
+            <h1>
+              SEU PROJETO.<br />
+              DE <span class="accent-text">OUTRO ÂNGULO.</span>
+            </h1>
+
+            <p class="lead">
+              Filmagens aéreas e FPV para transformar espaços, projetos e negócios em experiências visuais.
+            </p>
+
+            <div class="hero-actions">
+              <a href="https://wa.me/5511999999999?text=Ol%C3%A1%20Adilson%2C%20quero%20conhecer%20seu%20trabalho%20e%20falar%20sobre%20um%20projeto." class="button primary" target="_blank" rel="noreferrer">CONHEÇA MEU TRABALHO</a>
+              <a href="#contato" class="button secondary">FALE SOBRE SEU PROJETO</a>
+            </div>
+
+            <div class="scroll-indicator">
+              <span>ROLE PARA EXPLORAR</span>
+              <span class="arrow">↓</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="brand-marquee-stack" aria-label="Adilson Benedito, filmmaker e dronemaker FPV">
+        <div class="brand-marquee">
+          <div class="brand-marquee-track">
+            <span>ADILSON BENEDITO</span><b>•</b><span>FILMMAKER</span><b>•</b><span>DRONEMAKER FPV</span><b>•</b><span>FILMAGENS AÉREAS</span><b>•</b><span>VOOS CINEMATOGRÁFICOS</span><b>•</b>
+            <span>ADILSON BENEDITO</span><b>•</b><span>FILMMAKER</span><b>•</b><span>DRONEMAKER FPV</span><b>•</b><span>FILMAGENS AÉREAS</span><b>•</b><span>VOOS CINEMATOGRÁFICOS</span><b>•</b>
+            <span>ADILSON BENEDITO</span><b>•</b><span>FILMMAKER</span><b>•</b><span>DRONEMAKER FPV</span><b>•</b><span>FILMAGENS AÉREAS</span><b>•</b><span>VOOS CINEMATOGRÁFICOS</span><b>•</b>
+          </div>
+        </div>
+        <div class="brand-marquee brand-marquee-crossed">
+          <div class="brand-marquee-track">
+            <span>DRONE FPV</span><b>•</b><span>MOVIMENTO</span><b>•</b><span>IMPACTO</span><b>•</b><span>OUTRA PERSPECTIVA</span><b>•</b>
+            <span>DRONE FPV</span><b>•</b><span>MOVIMENTO</span><b>•</b><span>IMPACTO</span><b>•</b><span>OUTRA PERSPECTIVA</span><b>•</b>
+            <span>DRONE FPV</span><b>•</b><span>MOVIMENTO</span><b>•</b><span>IMPACTO</span><b>•</b><span>OUTRA PERSPECTIVA</span><b>•</b>
+          </div>
+        </div>
+      </div>
+
+      <section class="experience-scroll" id="experiencia">
+        <div class="container experience-shell">
+          <div class="experience-stage">
+            <div class="experience-video-wrap video-block">
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                data-video-construcao="assets/videos/categorias/video consturcao - Adilson Benedito.mp4"
+                data-video-eventos="assets/videos/categorias/video eventos - Adilson Benedito.mp4"
+                data-video-arquitetura="assets/videos/categorias/video arquitetura - Adilson Benedito.mp4"
+                data-video-empresarial="assets/videos/categorias/video empresarial - Adilson Benedito.mp4"
+                data-video-fpv="assets/videos/categorias/video fpv - Adilson Benedito.mp4"
+                poster="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+              >
+                <source src="assets/videos/categorias/video consturcao - Adilson Benedito.mp4" type="video/mp4" />
+              </video>
+            </div>
+
+            <div class="experience-wording" aria-live="polite">
+              <span class="scroll-word active">PERSPECTIVA</span>
+              <span class="scroll-word">MOVIMENTO</span>
+              <span class="scroll-word">ESCALA</span>
+              <span class="scroll-word">IMERSÃO</span>
+              <span class="scroll-word">PRECISÃO</span>
+              <span class="scroll-word">IMPACTO</span>
+            </div>
+
+            <div class="experience-scroll-hint" aria-hidden="true">
+              <span>CONTINUE ROLANDO</span>
+              <span class="experience-scroll-hint-arrow">↓</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-space" id="sobre">
+        <div class="container about-grid">
+          <div class="about-visual reveal-left">
+            <div class="portrait-frame video-block">
+              <img class="portrait-image" src="assets/images/categorias/adilson benedito.jpg" alt="Adilson Benedito" />
+            </div>
+          </div>
+
+          <div class="about-copy reveal-right">
+            <p class="section-kicker">POR TRÁS DA CÂMERA.</p>
+            <h2>ADILSON BENEDITO</h2>
+            <p class="role">FILMMAKER / DRONEMAKER FPV</p>
+            <p class="text-lead">
+              Mais do que registrar um espaço, a ideia é encontrar o ângulo que faz ele ser percebido de outra forma.
+            </p>
+            <div class="about-divider"></div>
+            <p>
+              Cada projeto é pensado como uma cena: com movimento, clareza visual e narrativa que transforma arquitetura, obra e marca em experiências memoráveis.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section-space" id="projetos">
+        <div class="container">
+          <div class="section-header reveal-up">
+            <p class="section-kicker alt">PROJETOS</p>
+            <h2>PROJETOS QUE JÁ GANHARAM OUTRA PERSPECTIVA.</h2>
+          </div>
+
+          <article class="project-scene project-scene-1">
+            <div class="project-media video-block">
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80"
+              >
+                <source src="assets/videos/categorias/video empresarial - Adilson Benedito.mp4" type="video/mp4" />
+              </video>
+              <div class="media-indicator"><span>▶</span></div>
+            </div>
+            <div class="project-copy">
+              <span>PROJETO 01</span>
+              <h3>PROJETO EMPRESARIAL</h3>
+              <p>Filmagem aérea + FPV</p>
+            </div>
+          </article>
+
+          <article class="project-scene project-scene-2">
+            <div class="project-media video-block">
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
+              >
+                <source src="assets/videos/categorias/video comercial - Adilson Benedito.mp4" type="video/mp4" />
+              </video>
+              <div class="media-indicator"><span>▶</span></div>
+            </div>
+            <div class="project-copy">
+              <span>PROJETO 02</span>
+              <h3>PROJETO COMERCIAL</h3>
+              <p>Filmagem aérea</p>
+            </div>
+          </article>
+
+          <article class="project-scene project-scene-3">
+            <div class="project-media video-block">
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
+              >
+                <source src="assets/videos/categorias/video consturcao - Adilson Benedito.mp4" type="video/mp4" />
+              </video>
+              <div class="media-indicator"><span>▶</span></div>
+            </div>
+            <div class="project-copy">
+              <span>PROJETO 03</span>
+              <h3>PROJETO DE CONSTRUÇÃO</h3>
+              <p>Filmagem aérea + FPV</p>
+            </div>
+          </article>
+
+          <article class="project-scene project-scene-4">
+            <div class="project-media video-block">
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+              >
+                <source src="assets/videos/categorias/video clinica - Adilson Benedito.mp4" type="video/mp4" />
+              </video>
+              <div class="media-indicator"><span>▶</span></div>
+            </div>
+            <div class="project-copy">
+              <span>PROJETO 04</span>
+              <h3>PROJETO CLÍNICO</h3>
+              <p>Filmagem aérea</p>
+            </div>
+          </article>
+
+          <div class="projects-whatsapp-call">
+            <p>Gostou de algum projeto?</p>
+            <a class="button primary" href="https://wa.me/5511999999999?text=Ol%C3%A1%20Adilson%2C%20vi%20seus%20projetos%20e%20quero%20conversar." target="_blank" rel="noreferrer">CONVERSAR SOBRE MEU PROJETO</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories section-space" id="categorias">
+        <div class="container">
+          <div class="section-header reveal-up">
+            <p class="section-kicker alt">CATEGORIAS</p>
+            <h2>ONDE A CÂMERA PODE CHEGAR?</h2>
+          </div>
+
+          <div class="category-list" aria-label="Categorias de trabalho">
+            <article class="category-item category-featured" data-video="assets/videos/categorias/video consturcao - Adilson Benedito.mp4" data-image="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=85" role="button" tabindex="0" aria-label="Abrir vídeo de Construção">
+              <video class="category-video" muted playsinline loop preload="metadata" aria-hidden="true"></video>
+              <span class="category-number">01</span>
+              <span class="category-view" aria-hidden="true"><span class="category-view-dot"></span>ABRIR VÍDEO</span>
+              <span class="category-name">CONSTRUÇÃO</span>
+            </article>
+            <article class="category-item" data-video="assets/videos/categorias/video arquitetura - Adilson Benedito.mp4" data-image="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=85" role="button" tabindex="0" aria-label="Abrir vídeo de Arquitetura">
+              <video class="category-video" muted playsinline loop preload="metadata" aria-hidden="true"></video>
+              <span class="category-number">02</span>
+              <span class="category-view" aria-hidden="true"><span class="category-view-dot"></span>ABRIR VÍDEO</span>
+              <span class="category-name">ARQUITETURA</span>
+            </article>
+            <article class="category-item" data-video="assets/videos/categorias/video comercial - Adilson Benedito.mp4" data-image="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1400&q=85" role="button" tabindex="0" aria-label="Abrir vídeo de Imóveis">
+              <video class="category-video" muted playsinline loop preload="metadata" aria-hidden="true"></video>
+              <span class="category-number">03</span>
+              <span class="category-view" aria-hidden="true"><span class="category-view-dot"></span>ABRIR VÍDEO</span>
+              <span class="category-name">IMÓVEIS</span>
+            </article>
+            <article class="category-item category-featured" data-video="assets/videos/categorias/video comercial - Adilson Benedito.mp4" data-image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=85" role="button" tabindex="0" aria-label="Abrir vídeo Comercial">
+              <video class="category-video" muted playsinline loop preload="metadata" aria-hidden="true"></video>
+              <span class="category-number">04</span>
+              <span class="category-view" aria-hidden="true"><span class="category-view-dot"></span>ABRIR VÍDEO</span>
+              <span class="category-name">COMERCIAL</span>
+            </article>
+            <article class="category-item" data-video="assets/videos/categorias/video empresarial - Adilson Benedito.mp4" data-image="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=85" role="button" tabindex="0" aria-label="Abrir vídeo Empresarial">
+              <video class="category-video" muted playsinline loop preload="metadata" aria-hidden="true"></video>
+              <span class="category-number">05</span>
+              <span class="category-view" aria-hidden="true"><span class="category-view-dot"></span>ABRIR VÍDEO</span>
+              <span class="category-name">EMPRESARIAL</span>
+            </article>
+            <article class="category-item" data-video="assets/videos/categorias/video clinica - Adilson Benedito.mp4" data-image="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1400&q=85" role="button" tabindex="0" aria-label="Abrir vídeo de Clínicas">
+              <video class="category-video" muted playsinline loop preload="metadata" aria-hidden="true"></video>
+              <span class="category-number">06</span>
+              <span class="category-view" aria-hidden="true"><span class="category-view-dot"></span>ABRIR VÍDEO</span>
+              <span class="category-name">CLÍNICAS</span>
+            </article>
+            <article class="category-item" data-video="assets/videos/categorias/video eventos - Adilson Benedito.mp4" data-image="assets/images/categorias/adilson benedito.jpg" role="button" tabindex="0" aria-label="Abrir vídeo de Eventos">
+              <video class="category-video" muted playsinline loop preload="metadata" poster="assets/images/categorias/adilson benedito.jpg" aria-hidden="true"></video>
+              <span class="category-number">07</span>
+              <span class="category-view" aria-hidden="true"><span class="category-view-dot"></span>ABRIR VÍDEO</span>
+              <span class="category-name">EVENTOS</span>
+            </article>
+            <article class="category-item category-featured" data-video="assets/videos/categorias/video fpv - Adilson Benedito.mp4" data-image="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=85" role="button" tabindex="0" aria-label="Abrir vídeo FPV">
+              <video class="category-video" muted playsinline loop preload="metadata" aria-hidden="true"></video>
+              <span class="category-number">08</span>
+              <span class="category-view" aria-hidden="true"><span class="category-view-dot"></span>ABRIR VÍDEO</span>
+              <span class="category-name">FPV</span>
+            </article>
+            <article class="category-item" data-video="assets/videos/categorias/video corrida - Adilson Benedito.mp4" data-image="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1400&q=85" role="button" tabindex="0" aria-label="Abrir vídeo de Corrida">
+              <video class="category-video" muted playsinline loop preload="metadata" aria-hidden="true"></video>
+              <span class="category-number">09</span>
+              <span class="category-view" aria-hidden="true"><span class="category-view-dot"></span>ABRIR VÍDEO</span>
+              <span class="category-name">CORRIDA</span>
+            </article>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="category-viewer" aria-hidden="true">
+        <div class="category-viewer-backdrop" data-category-close></div>
+        <div class="category-viewer-panel" role="dialog" aria-modal="true" aria-labelledby="category-viewer-title">
+          <button class="category-viewer-close" type="button" aria-label="Fechar vídeo" data-category-close>×</button>
+          <div class="category-viewer-heading">
+            <span class="category-viewer-number"></span>
+            <h3 id="category-viewer-title"></h3>
+          </div>
+          <div class="category-viewer-stage">
+            <div class="category-viewer-media">
+              <div class="category-viewer-video-shell">
+                <video class="category-viewer-video" controls muted playsinline preload="metadata"></video>
+              </div>
+              <div class="category-viewer-fallback">Vídeo disponível em breve</div>
+            </div>
+            <button class="category-viewer-rotate" type="button" aria-label="Girar vídeo" aria-pressed="false">↻ Girar</button>
+          </div>
+        </div>
+      </div>
+
+      <section class="social-proof section-space" id="depoimentos">
+        <div class="container">
+          <div class="section-header reveal-up">
+            <p class="section-kicker alt">FEEDBACKS</p>
+            <h2>QUEM VÊ O RESULTADO, SENTE A DIFERENÇA.</h2>
+          </div>
+
+          <div class="feedback-carousel" aria-label="Carrossel de feedbacks dos clientes">
+            <button class="feedback-arrow feedback-arrow-prev" type="button" aria-label="Feedback anterior">←</button>
+            <div class="feedback-viewport">
+              <div class="feedback-wall">
+            <article class="feedback-print feedback-print-left reveal-up" aria-label="Feedback de cliente">
+              <div class="whatsapp-topbar">
+                <span class="whatsapp-back">‹</span>
+                <span class="whatsapp-avatar">C</span>
+                <span class="whatsapp-contact">Cliente / projeto</span>
+                <span class="whatsapp-actions">···</span>
+              </div>
+              <div class="whatsapp-chat">
+                <span class="chat-date">HOJE</span>
+                <div class="chat-bubble received">Ficou muito bom! A movimentação valorizou demais o projeto.</div>
+                <div class="chat-bubble sent">Que bom que gostou. A ideia era mostrar a escala e os detalhes.</div>
+                <div class="chat-bubble received">O resultado ficou exatamente como imaginávamos. Parabéns!</div>
+              </div>
+              <div class="whatsapp-input">Mensagem <span>›</span></div>
+              <span class="feedback-label">PROJETO RESIDENCIAL</span>
+            </article>
+
+            <article class="feedback-print feedback-print-main reveal-up" aria-label="Feedback de cliente em destaque">
+              <div class="whatsapp-topbar">
+                <span class="whatsapp-back">‹</span>
+                <span class="whatsapp-avatar orange">J</span>
+                <span class="whatsapp-contact">Cliente / projeto</span>
+                <span class="whatsapp-actions">···</span>
+              </div>
+              <div class="whatsapp-chat">
+                <span class="chat-date">ONTEM</span>
+                <div class="chat-bubble received">A entrega ficou sensacional. O vídeo passou a sensação que a gente queria.</div>
+                <div class="chat-bubble sent">Esse é o objetivo: fazer quem assiste sentir o espaço antes mesmo de visitá-lo.</div>
+                <div class="chat-bubble received">Pode ter certeza que vamos trabalhar juntos novamente.</div>
+              </div>
+              <div class="whatsapp-input">Mensagem <span>›</span></div>
+              <span class="feedback-label">FILMAGEM AÉREA + FPV</span>
+            </article>
+
+            <article class="feedback-print feedback-print-right reveal-up" aria-label="Feedback de cliente">
+              <div class="whatsapp-topbar">
+                <span class="whatsapp-back">‹</span>
+                <span class="whatsapp-avatar green">M</span>
+                <span class="whatsapp-contact">Cliente / projeto</span>
+                <span class="whatsapp-actions">···</span>
+              </div>
+              <div class="whatsapp-chat">
+                <span class="chat-date">SEGUNDA</span>
+                <div class="chat-bubble received">As imagens ficaram lindas, principalmente a entrada e a fachada.</div>
+                <div class="chat-bubble sent">A gente pensou em cada movimento para apresentar o espaço.</div>
+                <div class="chat-bubble received">Já estamos usando o material na divulgação. Obrigado!</div>
+              </div>
+              <div class="whatsapp-input">Mensagem <span>›</span></div>
+              <span class="feedback-label">ARQUITETURA</span>
+            </article>
+
+            <article class="feedback-print reveal-up" aria-label="Feedback de cliente">
+              <div class="whatsapp-topbar">
+                <span class="whatsapp-back">‹</span>
+                <span class="whatsapp-avatar orange">R</span>
+                <span class="whatsapp-contact">Cliente / projeto</span>
+                <span class="whatsapp-actions">···</span>
+              </div>
+              <div class="whatsapp-chat">
+                <span class="chat-date">SEXTA</span>
+                <div class="chat-bubble received">A apresentação ganhou outra força com essas imagens.</div>
+                <div class="chat-bubble sent">A nova perspectiva ajuda a contar a história do projeto.</div>
+                <div class="chat-bubble received">Era exatamente essa sensação que buscávamos.</div>
+              </div>
+              <div class="whatsapp-input">Mensagem <span>›</span></div>
+              <span class="feedback-label">PROJETO COMERCIAL</span>
+            </article>
+
+            <article class="feedback-print reveal-up" aria-label="Feedback de cliente">
+              <div class="whatsapp-topbar">
+                <span class="whatsapp-back">‹</span>
+                <span class="whatsapp-avatar green">A</span>
+                <span class="whatsapp-contact">Cliente / projeto</span>
+                <span class="whatsapp-actions">···</span>
+              </div>
+              <div class="whatsapp-chat">
+                <span class="chat-date">QUARTA</span>
+                <div class="chat-bubble received">O material ficou muito profissional e já trouxe retorno.</div>
+                <div class="chat-bubble sent">Fico feliz. Pensamos nas imagens para funcionar também na divulgação.</div>
+                <div class="chat-bubble received">Vamos marcar o próximo projeto em breve!</div>
+              </div>
+              <div class="whatsapp-input">Mensagem <span>›</span></div>
+              <span class="feedback-label">EMPREENDIMENTO</span>
+            </article>
+              </div>
+            </div>
+            <button class="feedback-arrow feedback-arrow-next" type="button" aria-label="Próximo feedback">→</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="fpv-section section-space" id="fpv">
+        <div class="container fpv-wrap">
+          <div class="fpv-copy reveal-left">
+            <p class="section-kicker alt">EXPERIÊNCIA FPV</p>
+            <h2>NÃO É SÓ VER.<br />É ESTAR LÁ.</h2>
+            <p>
+              Movimentos mais livres, ângulos impossíveis e uma perspectiva que coloca o espectador dentro da cena.
+            </p>
+            <div class="fpv-specs" aria-label="Características da gravação FPV">
+              <span>DRONE FPV</span>
+              <span>VOO IMERSIVO</span>
+              <span>ÂNGULOS ÚNICOS</span>
+            </div>
+            <a class="fpv-whatsapp-call" href="https://wa.me/5511999999999?text=Ol%C3%A1%20Adilson%2C%20quero%20gravar%20meu%20projeto%20com%20drone%20FPV." target="_blank" rel="noreferrer">
+              <span>QUERO UM VOO FPV NO MEU PROJETO</span>
+              <strong>FALAR NO WHATSAPP ↗</strong>
+            </a>
+          </div>
+
+          <div class="fpv-drone-gallery" aria-label="Imagens do drone">
+            <figure class="fpv-drone-shot fpv-drone-shot-front">
+              <img src="assets/images/categorias/drone-preto-com-camera-e-fundo-transparente (1).png" alt="" />
+            </figure>
+            <figure class="fpv-drone-shot fpv-drone-shot-bottom">
+              <img src="assets/images/categorias/o-drone-3d-isolado-rende.png" alt="" />
+            </figure>
+          </div>
+
+          <div class="fpv-video reveal-right video-block">
+            <img src="assets/images/categorias/fpv - adilson benedito.png" alt="Adilson Benedito em uma experiência de voo FPV" />
+          </div>
+        </div>
+      </section>
+
+      <section class="process section-space" id="processo">
+        <div class="container">
+          <div class="section-header reveal-up">
+            <p class="section-kicker alt">PROCESSO</p>
+            <h2>DO PROJETO À IMAGEM.</h2>
+            <p class="process-intro">Cada filme nasce de um processo pensado para transformar uma ideia em uma imagem que comunica.</p>
+          </div>
+
+          <div class="process-track">
+            <div class="process-grid">
+              <article class="process-item reveal-up">
+                <span class="step-number">01</span>
+                <h3>PLANEJAR O VOO</h3>
+                <p>Definimos rota, luz, ângulos e movimentos para valorizar o projeto.</p>
+              </article>
+
+              <article class="process-item reveal-up">
+                <span class="step-number">02</span>
+                <h3>CAPTAR A CENA</h3>
+                <p>O drone entra em ação para revelar novas perspectivas.</p>
+              </article>
+
+              <article class="process-item reveal-up">
+                <span class="step-number">03</span>
+                <h3>CONSTRUIR O FILME</h3>
+                <p>Selecionamos os melhores momentos, ritmo e narrativa.</p>
+              </article>
+
+              <article class="process-item reveal-up">
+                <span class="step-number">04</span>
+                <h3>ENTREGAR IMPACTO</h3>
+                <p>Um vídeo pronto para apresentar e divulgar seu projeto.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="differential section-space" id="diferencial">
+        <div class="container differential-shell">
+          <div class="differential-visual reveal-up video-block">
+            <div class="before-after-frame" data-before-after>
+              <video
+                class="before-after-image before-image"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=85"
+                aria-label="Vídeo do drone no controle"
+              >
+                <source src="assets/videos/categorias/video consturcao - Adilson Benedito.mp4" type="video/mp4" />
+              </video>
+              <div class="before-after-after">
+                <video
+                  class="before-after-image after-image"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                  poster="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=85"
+                  aria-label="Resultado final da gravação aérea"
+                >
+                  <source src="assets/videos/categorias/video arquitetura - Adilson Benedito.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <span class="before-after-label before-label">NO CONTROLE</span>
+              <span class="before-after-label after-label">NO RESULTADO</span>
+              <div class="before-after-divider" aria-hidden="true">
+                <span>↔</span>
+              </div>
+              <input class="before-after-range" type="range" min="0" max="100" value="50" aria-label="Comparar controle e resultado" />
+            </div>
+          </div>
+
+          <div class="differential-copy">
+            <h2>UMA NOVA PERSPECTIVA<br />MUDA TUDO.</h2>
+            <div class="differential-words">
+              <span class="diff-word active">ESCALA</span>
+              <span class="diff-word">DETALHES</span>
+              <span class="diff-word">MOVIMENTO</span>
+              <span class="diff-word">IMPACTO</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" id="contato">
+        <div class="video-block cta-video-wrap">
+          <video
+            class="cta-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=80"
+          >
+            <source src="assets/videos/categorias/video comercial - Adilson Benedito.mp4" type="video/mp4" />
+          </video>
+          <div class="media-indicator"><span>▶</span></div>
+        </div>
+
+        <div class="cta-overlay"></div>
+
+        <div class="container cta-inner reveal-up">
+          <p class="section-kicker alt">SEU PROJETO</p>
+          <h2>MERECE SER VISTO.</h2>
+          <p>Vamos transformar seu projeto em uma experiência visual?</p>
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1%20Adilson%2C%20quero%20falar%20sobre%20meu%20projeto." class="button primary" target="_blank" rel="noreferrer">FALAR PELO WHATSAPP →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-name">ADILSON BENEDITO</p>
+          <p class="footer-role">FILMMAKER / DRONEMAKER FPV</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://www.instagram.com/adilson_benedito_/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="mailto:contato@adilsonbenedito.com">E-mail</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
